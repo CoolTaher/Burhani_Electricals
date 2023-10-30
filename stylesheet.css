@@ -219,7 +219,10 @@ nav a:hover {
 .Address h2{
   text-decoration: underline solid #122647 4px;
 }
-
+.Address p{
+  margin-top: 1em;
+  line-height: 1.85em;
+}
 /* -------------------------------------------------------------------------------------------------- */
 /* Footer styles */
 footer {
@@ -232,6 +235,11 @@ footer {
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
   /* Adjust styling for smaller screens here */
+  body{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
   header {
     padding: 40px 0;
     background-size: cover;
@@ -249,7 +257,9 @@ footer {
   nav li {
     margin: 0em 2em 0em -1em;
   }
-
+  .hero{
+    justify-content: center;
+  }
   .hero-content {
     width: 18rem;
     margin: 3em 0em 0em 2em;
@@ -288,14 +298,14 @@ footer {
   }
 
   .hero-image2 {
-    height: 40rem;
+    height: 43rem;
     margin: 0 0 0em 0;
   }
 
   .hero-image2 img {
     width: 19rem;
     height: 17rem;
-    margin: 2em 3em 0em 0em;
+    margin: 2em 2em 0em 0em;
   }
 
   .hero-image2 h2 {
@@ -309,10 +319,13 @@ footer {
   }
   .Address{
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .Address h2{
     margin: -1em 0em 0em 0em;
+  }
+  .Address p{
+    margin-top: 2em;
   }
   .overlay-text::after {
     animation: newAnimation 3s linear infinite; /* New animation for smaller screens */
