@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60c4596940.js" crossorigin="anonymous"></script>
+
+    <title>Burhani Electricals</title>
+</head>
+<body>
+    <header>
+      <div><h1>Burhani Electricals</h1></div>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="#" class="scroll-to-class" data-target="hero">Home</a></li>
+          <li><a href="#" class="scroll-to-class" data-target="heroImage1">Products</a></li>
+          <li><a href="#" class="scroll-to-class" data-target="heroImage2">About Us</a></li>
+          <li><a href="#" class="scroll-to-class" data-target="Address">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to <span class="overlay-text">Burhani Electricals!</span></h1>
+                <p>Discover the perfect lighting solutions for your space.</p>
+                <a href="/Products_Listing.html" class="cta-button" target="_blank">Browse Products</a>
+            </div>
+        </div>
+        <div class="hero-image1">
+            <img src="/photo_2023-10-28_12-27-59.jpg" alt="">
+            <h2>Products</h2>
+            <p>
+                Our Shop is your one-stop destination for lighting solutions. Our product lineup includes LED Floodlights, Panel Lights, COB Lights, Street Lights, Industrial Lights, Outdoor Fittings, Home LED Bulbs, Battens, Tubelights, Various Sensors, and LED Strips. We're here to make your lighting choices simple and effective, ensuring the perfect illumination for every space.</p>
+        </div>
+        <div class="hero-image2">
+            <img src="/etienne-girardet-NGb91VwnOWY-unsplash.jpg" alt="">
+            <h2>Excellence</h2>
+            <p>
+                As a trusted name in wholesale lighting, Burhani Electricals is your reliable partner for all your lighting needs. With years of successful business in the industry, we've built a reputation for excellence. We provide high-quality lighting solutions that cater to your wholesale requirements, making your choices simple and cost-effective. When you choose Burhani Electricals, you're choosing a seasoned partner in the lighting business, with a proven track record of delivering top-quality products.</p>
+        </div>
+        
+        <div class="Address">
+            <h2>Address & Contact</h2>
+            <p><i class="fa-solid fa-map-location-dot fa-2xl"></i></i> Shop No.1, Building, 10A, 3rd Marine Street <br>
+                 Dhobi Talao,Marine Lines <br>
+                  Mumbai, Maharashtra 400002</p>
+            <p><i class="fa-brands fa-square-whatsapp fa-2xl"></i> +91-8591804028</p>
+            <p><i class="fas fa-phone fa-xl"></i> +91-9960468843</p>
+            
+            <p>"With years of experience, we provide the highest quality lighting solutions to illuminate your world."</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; Burhani Electricals 2023. All rights reserved.</p>
+    </footer>
+    <script>
+        const navLinks = document.querySelectorAll('.scroll-to-class');
+        const scrollTargets = {
+          hero: document.querySelector('.hero'),
+          heroImage1: document.querySelector('.hero-image1'),
+          heroImage2: document.querySelector('.hero-image2'),
+          Address: document.querySelector('.Address')
+        };
+      
+        navLinks.forEach(link => {
+          link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetClass = link.getAttribute('data-target');
+            const targetSection = scrollTargets[targetClass];
+            if (targetSection) {
+              window.scrollTo({
+                top: targetSection.offsetTop - 20, // Adjust for any header padding
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,328 @@
+
+/* HOME PAGE */
+/* Header styles */
+body{
+  font-family: 'Roboto Mono', monospace;
+  margin: 0em;
+}
+header {
+  /* text-align: center; */
+  background-image: url('/patrick-tomasso-1NTFSnV-KLs-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: bisque;
+  padding: 80px 0;
+}
+header h1 {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  border: 5px solid bisque;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto; /* Horizontally center the element */
+  /* text-decoration: underline white 3px; */
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* Navigation styles */
+nav {
+  text-align: center;
+  background-color: #122647; /* Adjust opacity by changing the alpha value */
+  color: bisque;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: bisque;
+  text-decoration: underline solid 3px bisque;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fffcef;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 0px 0;
+  color: #122647;
+}
+/* Hero container */
+.hero-content{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 40rem;
+  height: 15rem;
+  background: bisque;
+  margin: 5em 0em 5em 21em;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.hero-text h1{
+  font-size: 2rem;
+  margin: 0em 0em 0em 0em;
+}
+.hero-text p{
+  font-size: larger;
+  margin: 2em 0em 0em 0em;
+  color: #122647;
+  font-weight: bold;
+}
+
+/* Add an infinite progress bar animation to the overlay text */
+
+.overlay-text {
+  display: inline-block;
+  position: relative;
+  color: #122647;
+}
+
+.overlay-text:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #122647;
+  transform-origin: bottom right;
+  transition: transform 2s ease-out;
+}
+
+.overlay-text:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Style the CTA button with a hover effect */
+.cta-button {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: bisque;
+  color: #122647;
+  text-decoration: underline solid 3px #122647;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+  margin: 1em 0em 0em 0em;
+  /* border: 3px solid whitesmoke; */
+}
+
+.cta-button:hover {
+  background-color: #ffffff; /* Change background color on hover */
+  color: #122647; /* Change text color on hover */
+  
+}
+/* Image positioning */
+.hero-image1{
+  background-color: bisque;
+  align-items: center;
+  height: 38rem;
+}
+.hero-image1 img{
+  width: 30rem; /* Ensure the image is responsive *//* Maintain image aspect ratio */
+  border-radius: 10px;
+  float: left; /* Float the first image to the left */
+  margin:4em 5em 0em 5em; /* Add margin for spacing */
+  height: 28rem;
+}
+
+.hero-image1 h2{
+  margin: 7em 4em 0em 0em;
+  text-decoration: underline #122647;
+}
+.hero-image1 p{
+  text-align: center;
+  align-items:center ;
+  font-weight: bolder;
+  margin: 1em 5em 0em 0em;
+  text-indent: 1em;
+  line-height: 1.7;
+}
+
+.hero-image2{
+  margin: 0em 0em 0em 0em;
+  background-color: bisque;
+  align-items: center;
+  height: 28rem;
+}
+
+.hero-image2 img{
+  width:30rem; /* Ensure the image is responsive */
+  height: auto; /* Maintain image aspect ratio */
+  border-radius: 10px;
+  float: right; /* Float the first image to the left */
+  margin: 0em 5em 0em 5em; /* Add margin for spacing */
+
+}
+
+.hero-image2 h2{
+  margin: 2em 0em 1em 0em;
+  text-decoration: underline #122647;
+}
+
+.hero-image2 p{
+  text-align: center;
+  font-weight: bolder;
+  text-indent: 1em;
+  line-height: 1.7;
+  margin: 0em 4em 0em 3em
+}
+/* Apply a shadow effect to images */
+.hero-image1 img,
+.hero-image2 img {
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+  border-radius: 20px; /* Optionally, add rounded corners to the images */
+}
+
+
+/* ----------------------------------------------------------------- */
+
+/* Address section */
+.Address {
+  background-color: #fffcef; /* Background color for the excellence section */
+  color: #02193b; /* Text color for the excellence section */
+  padding: 40px 0; /* Add padding for spacing */
+  text-align: center;
+  font-weight: bolder;
+  line-height: 1.8em;
+}
+.Address h2{
+  text-decoration: underline solid #122647 4px;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #122647;
+  color: #fff;
+}
+/* ************************************************************************************************** */
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust styling for smaller screens here */
+  header {
+    padding: 40px 0;
+    background-size: cover;
+  }
+
+  header h1 {
+    width: 14rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin: 0em 2em 0em -1em;
+  }
+
+  .hero-content {
+    width: 18rem;
+    margin: 3em 0em 0em 2em;
+  }
+  .hero-content h1{
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .hero-image1 {
+    margin: 4em 0;
+  }
+
+  .hero-image1 img {
+    width: 19rem;
+    height: 17rem;
+    margin: 2em 0em 0em 3.5em
+  }
+
+  .hero-image1 h2 {
+    margin: 14em 0em 1em 0em;
+  }
+
+  .hero-image1 p {
+    font-size: 0.8rem;
+    text-indent: 0;
+    margin: 0em 2em 0em 2em;
+  }
+
+  .hero-image2 {
+    height: 40rem;
+    margin: 0 0 0em 0;
+  }
+
+  .hero-image2 img {
+    width: 19rem;
+    height: 17rem;
+    margin: 2em 3em 0em 0em;
+  }
+
+  .hero-image2 h2 {
+    margin: 14em 0em 1em 0;
+  }
+
+  .hero-image2 p {
+    font-size: 0.7rem;
+    text-indent: 0;
+    margin: 0em 2em 0em 2em;
+  }
+  .Address{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .Address h2{
+    margin: -1em 0em 0em 0em;
+  }
+  .overlay-text::after {
+    animation: newAnimation 3s linear infinite; /* New animation for smaller screens */
+  }
+}
+@keyframes newAnimation {
+  0% {
+    width: 0%; /* Start with no underline */
+  }
+  100% {
+    width: 95%; /* Finish with a half-width underline */
+  }
+}
