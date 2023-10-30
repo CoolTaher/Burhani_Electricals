@@ -7,7 +7,7 @@ body{
 }
 header {
   /* text-align: center; */
-  background-image: url('/patrick-tomasso-1NTFSnV-KLs-unsplash.jpg');
+  background-image: url('patrick-tomasso-1NTFSnV-KLs-unsplash.jpg');
   background-size: cover;
   background-position: center;
   color: bisque;
